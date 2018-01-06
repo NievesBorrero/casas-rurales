@@ -1,0 +1,93 @@
+/*
+* Iconos: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+*/
+
+body{
+	background-image: url("../images/citytablet.jpg");
+}
+
+.container{		
+	background-image: url("../images/disconnectablet.jpeg");
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 50px;
+	text-align: center;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
+}
+
+.container > h6{
+	margin: 20px;
+	color: #0D8130;
+	font-size: 2rem;
+	text-align: center
+}
+
+.container > a{
+	display: inline-block;
+
+	width:5rem;
+	height: 5rem;
+}
+
+.container > a > img{
+	width: 5rem;
+	height: 5rem;
+}
+
+.text{
+	margin: 15px;
+	animation-delay: 4s;	
+	animation-name: fadeOut;
+	animation-fill-mode: forwards;	
+}
+
+span{
+	color:white;
+	font-size: 1.8rem;
+	font-style: bold;
+	opacity: 0;
+	animation-name: fadeIn;
+	animation-fill-mode: forwards;	
+}
+
+.noise{
+	animation-delay: 1s;
+	animation-duration: 1s;
+}
+
+.cont{
+	animation-delay: 2s;
+	animation-duration: 1s;
+}
+
+.stress{
+	animation-delay: 3s;
+	animation-duration: 1s;
+}
+
+
+@keyframes fadeIn{
+	from {
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@keyframes fadeOut{
+	from {
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+
+
