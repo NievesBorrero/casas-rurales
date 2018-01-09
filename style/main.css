@@ -2,12 +2,19 @@
 * Iconos: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 */
 
-body{
-	background-image: url("../images/citytablet.jpg");
+.container{
+	background-image: url("../images/mexico.jpg");
+	background-size: cover;
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	
 }
 
-.container{		
-	background-image: url("../images/disconnectablet.jpeg");
+.disconnect{		
+	background-image: url("../images/casas.jpg");
+	background-size: cover;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -21,27 +28,28 @@ body{
 	animation-delay: 5s;
 }
 
-.container > h6{
+.disconnect > h6{
 	margin: 20px;
 	color: #0D8130;
 	font-size: 2rem;
 	text-align: center
 }
 
-.container > a{
+.disconnect > a{
 	display: inline-block;
 
 	width:5rem;
 	height: 5rem;
 }
 
-.container > a > img{
+.disconnect > a > img{
 	width: 5rem;
 	height: 5rem;
 }
 
 .text{
-	margin: 15px;
+	text-align: center;
+	margin: 10%;
 	animation-delay: 4s;	
 	animation-name: fadeOut;
 	animation-fill-mode: forwards;	
@@ -89,5 +97,3 @@ span{
 		opacity:0;
 	}
 }
-
-
