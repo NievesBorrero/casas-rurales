@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./style/normalize.css">
+	<link rel="stylesheet" href="./style/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<nav>
+			<div>
+				<img class="logo" src="./images/logo.svg">
+				<h1>Desconecta</h1>
+			</div>
+			<img class="menu" src="./images/menu-button.svg">
+			<ul>
+				<li><a href="">Mapa</a></li>
+				<li><a href="">Login</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section class="home-search">
+				<h3>¿Dónde quieres desconectar?</h3>
+				<form action="" method="" accept-charset="utf-8">
+					<div class="inputsHome">						
+						<label class=location-input>
+							<i class="material-icons">location_on</i>
+							<input type="text" placeholder="Provincia, localidad..."></label>						
+						<label class="people-input">
+							<i class="material-icons">people</i>
+							<input type="text" placeholder="Plazas">
+						</label>	
+						<label class="type-input"><i class="material-icons">home</i>
+							<select name="type">
+								<option value="">Todos los alojamientos</option>
+								<option value="">Alquiler completo</option>
+								<option value="">Alquiler por habitaciones</option>
+							</select>
+						</label>						
+					</div>
+					<button type=""><span>Buscar</span></button>
+				</form>
+			</section>
+			<aside>
+				<form action="" method="" accept-charset="utf-8">
+					<div class="inputsFilter">
+						<input type="date" placeholder="Entrada">
+						<input type="date" placeholder="Salida">
+						<strong>Precio por persona y noche</strong>
+						<select name="" multiple>
+							<option value="Min"></option>
+						</select>
+						<select name="" multiple>
+							<option value="Max"></option>
+						</select>
+						<strong>Características</strong>
+						<label>Barbacoa</label>
+						<input type="checkbox" name="">
+						<label>Chimenea</label>
+						<input type="checkbox" name="">
+						<label>Jacuzzi</label>
+						<input type="checkbox" name="">
+						<label>Piscina</label>
+						<input type="checkbox" name="">
+						<strong>Actividades</strong>
+						<label>Bicicleta</label>
+						<input type="checkbox" name="">
+						<label>Multiaventura</label>
+						<input type="checkbox" name="">
+						<label>Rutas</label>
+						<input type="checkbox" name="">
+						<label>Tiro con arco</label>
+						<input type="checkbox" name="">
+					</div>
+					<div class="buttonsFilter">
+						<input type="submit" class="btnEnviar" name="Limpiar" value="Buscar">
+						<input type="submit" class="btnEnviar" name="Aplicar" value="Buscar">
+					</div>
+				</form>
+			</aside>
+			<section>
+				<div class="orderBy">
+					<p>Destinos seleccionados</p>
+					<select name="type">
+							<option selected="selected" disabled="true">Ordenar por</option>
+							<option value="">Precio más alto</option>
+							<option value="">Precio más bajo</option>
+							<option value="">Mejor valorados</option>
+					</select>
+					<button class="btnFiltrar"><span>Filtrar</span></button>
+				</div>
+				<div class="houses">
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+					<a href="">
+						<article>
+						   	<img class="casarural" src="./images/rural.jpg">
+						    <div>
+								<ul>
+									<li><h3 class="name">Nombre del Alojamiento</h3></li>
+									<li><h4 class="place">Localización concreta</h4></li>
+									<li>
+										<i class="material-icons">people</i><strong>2-10</strong>  
+										<i class="material-icons">star</i><strong>5</strong>
+									</li>
+									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
+								</ul>
+								<img src="./images/turn-on.svg" class="btnDisconnect">	
+							</div>						
+							</article>
+					</a>
+				</div>				
+			</section>			
+		</main>
+		<footer>
+			<div class="terminos">
+				<a href="">Licencias</a>
+                <a href="#">Condiciones</a>
+                <a href="#">Privacidad</a>
+			</div>
+			<div class="redesSocialesFooter">
+                <a href="#">
+                    <img src="./images/tw-blanco.svg">
+                </a>
+                <a href="#">
+                    <img src="./images/fb-blanco.svg">
+                </a>
+                <a href="#">
+                    <img src="./images/inst-blanco.svg">
+                </a>
+			</div>
+		</footer>
+		
+	</div>
+</body>
+</html>

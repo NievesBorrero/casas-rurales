@@ -1,99 +1,296 @@
-/*
-* Iconos: <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+/**
+* color body: #F6F9FC  rgb(13, 129, 48)
+ * Texto ppal: #FFFFFF;
 */
 
-.container{
-	background-image: url("../images/mexico.jpg");
-	background-size: cover;
-	top: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	
+body{
+	background-color: #EFEFEF;
+	font-family: 'Roboto', sans-serif;;
 }
 
-.disconnect{		
-	background-image: url("../images/casas.jpg");
-	background-size: cover;
-	position: absolute;
-	top: 0;
+nav{
+	background-color:#0D8130;	
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
-	height: 100%;
-	padding-top: 50px;
+	height: 60px;
+	align-items: center;
+}
+
+nav,.home-search, .orderBy, footer{	
+	margin: 0px 5px 0px;
+}
+
+nav div{
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-left: 5px;
+}
+
+h1{
+	font-size: 1.2rem;
+}
+
+.menu {
+	padding: 17px;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+nav > ul{
+	list-style: none;
+	display: none;
+}
+
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/**/
+.home-search{
+	background-image: url("../images/arboles.jpg");
+	height: 200px;
+	background-size: cover;
+	color: #FFFFFF;
 	text-align: center;
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-duration: 5s;
-	animation-fill-mode: forwards;
-	animation-delay: 5s;
+	margin-top: 5px;
+}
+.inputsHome input[type="text"]{
+	border:none;
+	background: none;
+	padding: 10px 0 3px 0;
+	border-bottom: 1px solid gray;
+}
+.inputsHome select{
+	background-color: transparent;
+	-moz-appearance: none;
+ 	-webkit-appearance: none;
+ 	appearance: none;
+	border: none;
+	overflow: hidden;
+	padding: 5px 0 3px 0;
+	color: gray;
+}
+.inputsHome select option{
+	border-bottom: 1px solid #EFEFEF;
 }
 
-.disconnect > h6{
-	margin: 20px;
-	color: #0D8130;
-	font-size: 2rem;
-	text-align: center
-}
-
-.disconnect > a{
+.home-search > h3{
 	display: inline-block;
-
-	width:5rem;
-	height: 5rem;
 }
 
-.disconnect > a > img{
-	width: 5rem;
-	height: 5rem;
+.inputsHome{
+	background: rgba(255,255,255,0.8);
+	margin: 0 auto;
+	width: 85%;
+	font-size: 80%;
+	padding: 10px;
+	text-align: left;
+	display: grid;
+	grid-template-areas: "a a" "b c";
+	grid-template-columns: 30% 70%;
+	grid-row-gap: 5px;
 }
 
-.text{
+.location-input{
+	grid-area: a;
+}
+
+.people-input{
+	grid-area: b;
+}
+
+.type-input{
+	grid-area: c;
+}
+
+.location-input input{
+	width: 145px;
+}
+
+.people-input input{
+	width: 45px;
+}
+
+.type-input select{
+	width: 155px;
+}
+
+.type-input .material-icons{
+	padding-top: 2px;
+}
+
+button span{
+	display: block;
+}
+
+button, .orderBy select{
+	border-radius: 2px;
+  	border-width: 0;
+  	box-shadow: 0 1px 4px rgba(0, 0, 0, .6); 
+}
+
+.home-search button{
+	margin-top: 10px;
+  	background-color: #0D8130;
+  	color: #EFEFEF;
+  	
+}
+
+.home-search button span {
+ 	padding: 5px 5px;
+}
+
+.home-search button:hover, .home-search button:focus {
+ 	background-color: #0F9839;
+}
+
+.home-search .material-icons{
+	color:#0D8130;
+	font-size: 20px;
+}
+
+button:active{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside{
+	display: none;
+}
+
+.orderBy{	
+	font-size: 0.9rem;
+	background-color: #FFFFFF;
+	padding: 5px;	
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.orderBy button, .orderBy select{
+	background-color: #EEEEEE;
+	color: #0D8130;
+}
+
+.orderBy button{
+	padding: 5px 20px;
+}
+
+.orderBy button:hover, .orderBy select:hover{
+	background-color: #FAFAFA;
+}
+
+.orderBy select{
+	appearance: none;
+	-moz-appearance: none;
+ 	-webkit-appearance: none;
+}
+
+.orderBy > p{
+	display: none;
+}
+/**/
+
+.houses{
+	display:grid;
+}
+
+main > section > .houses > a > article{
+	background-color: #FFFFFF;
+	margin: 5px;
+	font-size: 0.7rem;
+	color: gray;
+	padding:5px;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+	border: 1px solid #0D8130;
+	box-shadow: 0 3px 6px rgba(3, 38, 14,0.16), 0 3px 6px rgba(5,51,19,0.23);
+}
+
+main > section > .houses > a > article:hover{
+	transform:scale(1.008);
+}
+
+main > section > .houses > a > article h3, h4{
+	margin:3px;
+}
+
+main > section > .houses > a > article ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+article > div > ul > li{
+	margin-bottom: 10px;
+}
+
+article .material-icons{
+	color: #0D8130;
+}
+
+.casarural{
+	width: 90%;
+	height: 90%;
+	margin-top: 5px;
+}
+
+.btnDisconnect{
+	width: 3rem;
+	height: 3rem;
+	display: none;
+}
+
+footer{	
+	background-color: #0D8130;
+	color: white;
+	padding: 20px;
 	text-align: center;
-	margin: 10%;
-	animation-delay: 4s;	
-	animation-name: fadeOut;
-	animation-fill-mode: forwards;	
 }
 
-span{
-	color:white;
-	font-size: 1.8rem;
-	font-style: bold;
-	opacity: 0;
-	animation-name: fadeIn;
-	animation-fill-mode: forwards;	
+.terminos a{
+	margin: 0px 5px 0px;
 }
 
-.noise{
-	animation-delay: 1s;
-	animation-duration: 1s;
+.redesSocialesFooter > a > img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 20px 10px 0px;
 }
 
-.cont{
-	animation-delay: 2s;
-	animation-duration: 1s;
-}
-
-.stress{
-	animation-delay: 3s;
-	animation-duration: 1s;
-}
-
-
-@keyframes fadeIn{
-	from {
-		opacity:0;
+@media (min-width: 480px){
+	.home-search{
+		height: 300px;
 	}
-	to{
-		opacity:1;
+
+	.home-search h3{
+		font-size: 40px;
+	}
+
+	.inputsHome{
+		grid-template-areas: "a b c";
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.houses{
+		grid-template-columns: 1fr 1fr;
+	}	
+
+	nav{
+		height: 70px;
 	}
 }
 
-@keyframes fadeOut{
-	from {
-		opacity:1;
-	}
-	to{
-		opacity:0;
-	}
+@media (min-width: 1024px){
+	.houses{
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
 }
+
