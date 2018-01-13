@@ -47,49 +47,61 @@
 			</section>
 			<aside>
 				<form action="" method="" accept-charset="utf-8">
-					<div class="inputsFilter">
-						<input type="date" placeholder="Entrada">
-						<input type="date" placeholder="Salida">
-						<strong>Precio por persona y noche</strong>
-						<select name="" multiple>
-							<option value="Min"></option>
-						</select>
-						<select name="" multiple>
-							<option value="Max"></option>
-						</select>
-						<strong>Características</strong>
-						<label>Barbacoa</label>
-						<input type="checkbox" name="">
-						<label>Chimenea</label>
-						<input type="checkbox" name="">
-						<label>Jacuzzi</label>
-						<input type="checkbox" name="">
-						<label>Piscina</label>
-						<input type="checkbox" name="">
-						<strong>Actividades</strong>
-						<label>Bicicleta</label>
-						<input type="checkbox" name="">
-						<label>Multiaventura</label>
-						<input type="checkbox" name="">
-						<label>Rutas</label>
-						<input type="checkbox" name="">
-						<label>Tiro con arco</label>
-						<input type="checkbox" name="">
-					</div>
+					    <div class="fechas">
+							<strong>Fechas</strong>
+							<p><label>Entrada &nbsp</label><input type="date"></p>
+							<p><label>Salida  &nbsp &nbsp</label><input type="date"></p>
+						</div>						
+							<p><strong>Precio por persona y noche</strong></p>
+							<select name="price">
+								<option selected="selected" value="">Min</option>
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="60">60</option>
+								<option value="70">70</option>
+							</select>
+							<select name="">
+								<option value="20">20</option>
+								<option value="30">30</option>
+								<option value="40">40</option>
+								<option value="50">50</option>
+								<option value="60">60</option>
+								<option value="70">70</option>
+								<option selected="selected" value="">Max</option>
+							</select>
+						
+							<p><strong>Características</strong></p>
+								<ul>
+									<li><input type="checkbox" name=""><label>Barbacoa</label></li>
+									<li><input type="checkbox" name=""><label>Chimenea</label></li>				
+									<li><input type="checkbox" name=""><label>Jacuzzi</label></li>
+									<li><input type="checkbox" name=""><label>Piscina</label></li>
+								</ul>
+						
+							<p><strong>Actividades</strong></p>
+							<ul>
+								<li><input type="checkbox" name=""><label>Bicicleta</label></li>
+								<li><input type="checkbox" name=""><label>Multiaventura</label></li>
+								<li><input type="checkbox" name=""><label>Rutas</label></li>
+								<li><input type="checkbox" name=""><label>Tiro con arco</label></li>
+							</ul>	
+						
+						
 					<div class="buttonsFilter">
-						<input type="submit" class="btnEnviar" name="Limpiar" value="Buscar">
-						<input type="submit" class="btnEnviar" name="Aplicar" value="Buscar">
+						<button><span>Limpiar</span></button>
+						<button><span>Aplicar</span></button>
 					</div>
 				</form>
 			</aside>
-			<section>
+			<section class="found">
 				<div class="orderBy">
-					<p>Destinos seleccionados</p>
 					<select name="type">
-							<option selected="selected" disabled="true">Ordenar por</option>
 							<option value="">Precio más alto</option>
 							<option value="">Precio más bajo</option>
 							<option value="">Mejor valorados</option>
+							<option selected="selected" disabled="true">Ordenar por</option>
 					</select>
 					<button class="btnFiltrar"><span>Filtrar</span></button>
 				</div>

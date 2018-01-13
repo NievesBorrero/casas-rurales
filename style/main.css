@@ -1,7 +1,4 @@
-/**
-* color body: #F6F9FC  rgb(13, 129, 48)
- * Texto ppal: #FFFFFF;
-*/
+
 
 body{
 	background-color: #EFEFEF;
@@ -18,13 +15,17 @@ nav{
 	align-items: center;
 }
 
-nav,.home-search, .orderBy, footer{	
+nav, main, footer{	
 	margin: 0px 5px 0px;
 }
 
 nav div{
 	display: flex;
 	align-items: center;
+}
+
+ul{
+	list-style: none;
 }
 
 .logo{
@@ -44,8 +45,12 @@ h1{
 }
 
 nav > ul{
-	list-style: none;
 	display: none;
+}
+
+nav > ul > li{
+	display: inline-block;
+	margin: 0px 20px 0px;
 }
 
 a{
@@ -163,27 +168,56 @@ button:active{
 
 aside{
 	display: none;
+	padding: 5px;
+	margin: 5px 0px 5px 0px;
+	box-shadow: 0 3px 6px rgba(3, 38, 14,0.16), 0 3px 6px rgba(5,51,19,0.23);
+	color:gray;
+	font-size: 0.9rem;
+}
+
+aside strong{
+	color:#0D8130;
+}
+
+aside ul li{
+	margin-bottom: 20px;
+}
+
+aside select{
+	width: 40%;
+}
+
+aside .fechas{
+	line-height: 50px;
+}
+
+aside input{
+	color: gray;
+}
+
+aside .buttonsFilter{
+	display: flex;
+	justify-content: space-around;
 }
 
 .orderBy{	
 	font-size: 0.9rem;
-	background-color: #FFFFFF;
 	padding: 5px;	
 	display: flex;
 	justify-content: space-between;
 
 }
 
-.orderBy button, .orderBy select{
+.orderBy button, .orderBy select, aside button{
 	background-color: #EEEEEE;
 	color: #0D8130;
 }
 
-.orderBy button{
+.orderBy button, aside button{
 	padding: 5px 20px;
 }
 
-.orderBy button:hover, .orderBy select:hover{
+.orderBy button:hover, .orderBy select:hover, aside button:hover{
 	background-color: #FAFAFA;
 }
 
@@ -193,9 +227,6 @@ aside{
  	-webkit-appearance: none;
 }
 
-.orderBy > p{
-	display: none;
-}
 /**/
 
 .houses{
@@ -223,7 +254,6 @@ main > section > .houses > a > article h3, h4{
 }
 
 main > section > .houses > a > article ul{
-	list-style: none;
 	margin:0;
 	padding:0;
 }
@@ -266,7 +296,26 @@ footer{
 }
 
 @media (min-width: 480px){
+	
+	.houses{
+		grid-template-columns: 1fr 1fr;
+	}	
+
+	.menu{
+		display: none;
+	}
+
+
+	nav > ul{
+		display: inline-block;
+	}
+
+}
+
+@media (min-width: 600px){
+
 	.home-search{
+		grid-area: sectionA;
 		height: 300px;
 	}
 
@@ -278,19 +327,29 @@ footer{
 		grid-template-areas: "a b c";
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-
-	.houses{
-		grid-template-columns: 1fr 1fr;
-	}	
-
-	nav{
-		height: 70px;
-	}
 }
 
 @media (min-width: 1024px){
 	.houses{
 		grid-template-columns: 1fr 1fr 1fr;
 	}	
+
+	aside{
+		width: 20%;
+	}
+
+	.found{
+		display: inline-block;
+		width: 77%;
+		vertical-align: top;
+	}
+
+
+
+	aside{
+		display: inline-block;
+	}
+
+
 }
 
