@@ -1,4 +1,8 @@
-
+/**
+* <div>Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+* <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+* <div>Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+*/
 
 body{
 	background-color: #EFEFEF;
@@ -275,6 +279,7 @@ article .material-icons{
 .btnDisconnect{
 	width: 3rem;
 	height: 3rem;
+	margin-left: 30px;
 	display: none;
 }
 
@@ -295,6 +300,231 @@ footer{
 	margin: 20px 10px 0px;
 }
 
+/* --------------------------- LODGING --------------------------- */
+
+.name-lodging{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background-color: #E2E2E2;
+}
+
+.name-lodging a, .buttons-lodging a{
+	color: gray;
+}
+
+.name-lodging h3, h4{
+	text-align: center;
+	color: #0D8130;
+}
+
+.name-lodging span{
+	display: none;
+}
+
+.buttons-lodging{
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #0D8130;
+	border-radius: 20px;
+	background-color: #E2E2E2;
+}
+
+.form-lodging{
+	display: none;
+	padding-top: 40px;
+}
+
+.lodging img{
+	width: 100%;
+}
+
+.img-lodging{
+	padding: 15px;
+}
+
+.form-lodging button{	
+	background-color: #0D8130;
+	color: white;
+}
+
+.form-lodging button span{
+	margin: 8px 10px 8px;
+}
+
+.form-lodging li > button > img{
+	width: 20px;
+	height: 20px;
+	margin: 5px 35px 5px;
+}
+
+.form-lodging li{
+	margin-bottom: 20px;
+}
+
+.img-lodging ul{
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.7rem;
+	padding-left: 0px;
+	color: gray;
+}
+
+.img-lodging .material-icons{
+	color: #0D8130;
+}
+
+.info{
+	height: 50px;
+	overflow: hidden;
+	transition: height 1s;
+}
+
+.info:hover{
+	height: 250px;
+}
+
+.info > p{
+	padding: 0px 15px 0px;
+	font-size: 0.9rem;
+	color: #3F3F3F;
+}
+
+.main-lodging a p{
+	color: gray;
+	border-top: 1px solid gray;
+	margin: 0px 5px 0px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnFixed{
+	position: fixed;	
+	bottom: 0px;
+}
+
+#disconnect{
+	right: 25px;
+}
+
+#share{
+	right: 80px;
+}
+
+.main-lodging > a > img{
+	width: 50px;
+	height: 50px;
+}
+
+ul li:first-child{
+	*display: none;
+}
+
+.form-lodging > button{
+	display: none;
+}
+
+.form-lodging > button{
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+	margin: 20px 0px 0px 20px;
+}
+
+#tw {
+	background-color: #00BCD4;
+}
+
+#fb{
+	background-color: #4758B5;
+}
+
+#inst{
+	background-color: #E92568;
+}
+
+#g{
+	background-color: #F44336;
+}
+
+.form-lodging > button > img{
+	width: 20px;
+}
+
+/*** ------------- FORM ------------------- ***/
+
+.form-lodging .form{
+	display: none;
+}
+
+.form{
+	width: 90%;
+	max-width: 250px;
+	padding: 0px 20px 10px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0px 0px 3px gray;
+	margin-top: 20px;
+	font-size: 0.9rem;
+	
+}
+
+.form h4{
+	background-color: #0D8130;
+	color: white;
+	padding: 10px;
+}
+
+.form div{
+	margin-top: 20px;
+}
+
+.input-group{
+	line-height: 0px;
+}
+
+.input-group label, .input-date label{
+  color:#999;
+}
+
+.input-checkbox{
+	color: #0D8130;
+	margin-bottom: 10px;
+}
+
+.form input[type="date"]{
+	color: gray;
+}
+
+input[type="text"], input[type="email"], input[type="date"]{
+	font-size: 16px;
+	width: 90%;
+	outline: none;
+	padding: 15px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #0D8130;
+	font-size: 0.8rem;
+}
+
+.form button{
+	padding: 10px;
+	transition: background-color 1s;
+}
+
+.form button label{
+	padding: 10px;
+}
+		
+.form button:hover{
+	background-color: #074D1C;
+}
+
+		
 @media (min-width: 480px){
 	
 	.houses{
@@ -310,6 +540,34 @@ footer{
 		display: inline-block;
 	}
 
+	.name-lodging span{
+		display: inline;
+	}	
+
+	.info{
+		height: 250px;
+	}
+
+	.info > a > p > i{
+		display:none;
+	} 
+
+}
+
+@media (min-width: 520px){
+	.form-lodging{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.lodging{
+		display: inline-block;
+		width: 70%;
+	}
+
+	.btnFixed{
+		display: none;
+	}
 }
 
 @media (min-width: 600px){
@@ -327,6 +585,11 @@ footer{
 		grid-template-areas: "a b c";
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
+	.btnDisconnect{
+		display: inline;
+	}	
+
 }
 
 @media (min-width: 1024px){
@@ -336,6 +599,7 @@ footer{
 
 	aside{
 		width: 20%;
+		display: inline-block;
 	}
 
 	.found{
@@ -344,12 +608,19 @@ footer{
 		vertical-align: top;
 	}
 
-
-
-	aside{
-		display: inline-block;
+	.form-lodging > button{
+		display: inline;
 	}
 
+	.form-lodging ul{
+		display: none;
+	}
+
+	.form-lodging .form{
+		display: block;
+	}
 
 }
+
+
 
