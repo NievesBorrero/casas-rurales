@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Desconecta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desconecta - Nieves Borrero</title>
 	<link rel="stylesheet" href="./style/normalize.css">
 	<link rel="stylesheet" href="./style/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
@@ -13,17 +14,17 @@
 	<nav>
 		<div>
 			<img class="logo" src="./images/logo.svg">
-			<h1>Desconecta</h1>
+			<h1><a href="./main.html">Desconecta</a></h1>
 		</div>
 		<img class="menu" src="./images/menu-button.svg">
 		<ul>
-			<li><a href="">Mapa</a></li>
+			<li><a href="main.html">Mapa</a></li>
 			<li><a href="">Login</a></li>
 		</ul>
 	</nav>
 	<main class="main-lodging">
 		<div class="name-lodging">
-			<p><a href=""><i class="material-icons">keyboard_arrow_left</i><i class="material-icons">keyboard_arrow_left</i><span>Volver</span></a></p>
+			<p><a href=""><i class="material-icons">keyboard_arrow_left</i><i class="material-icons">keyboard_arrow_left</i><span>Anterior</span></a></p>
 			<div>
 				<h3>Nombre Alojamiento</h3>
 				<h4>Localización</h4>
@@ -32,17 +33,17 @@
 		</div>
 		<div class="lodging">
 			<div class="buttons-lodging">
-				<a>Inicio</a>
+				<a href="./main.html">Inicio</a>
 				<a>Opiniones</a>
-				<a>Mapa</a>
+				<a href="#map">Mapa</a>
 			</div>
 			<div class="img-lodging">
 				<img src="./images/rural.jpg">
 				<ul>
-					<li><i class="material-icons">home</i>&nbsp Tipo Alquiler<p>Alquiler Íntegro</p></li>
-					<li><i class="material-icons">people</i>&nbsp Capacidad<p>2-5 pers.</p></li>
-					<li><i class="material-icons">hotel</i>&nbsp Habs.<p>2 habs.</p></li>
-					<li><i class="material-icons">attach_money</i>Precio<p>20 € pers/noche</p></li>
+					<li><i class="material-icons">home</i><p>Alquiler Íntegro</p></li>
+					<li><i class="material-icons">people</i><p>2-5 pers.</p></li>
+					<li><i class="material-icons">hotel</i><p>2 habs.</p></li>
+					<li><i class="material-icons">attach_money</i><p>20 € pers/noche</p></li>
 				</ul>
 			</div>
 		</div>
@@ -55,18 +56,18 @@
 			
 			<ul>
 				<li><button type="button"><img src="./images/share-white.svg"></button></li>
-				<li><button type="button"><span>Reservar</span></button></li>
+				<li><a href="./form.html"><button type="button"><span>Reservar</span></button></a></li>
 			</ul>
 				<div class="form">
 					<h4>Reserva</h4>
-					<form>
+					<form action="#">
 						<div class="input-group">							  
 					          <label>Nombre y apellido</label>
-					          <input type="text" id="nombre">
+					          <input type="text" id="nombre" required>
 				        </div>
 				        <div class="input-group">
 				        	  <label>Correo</label>
-					          <input type="email" id="correo">
+					          <input type="email" id="correo" required>
 					          
 				        </div>
 				        <div class="input-date">
@@ -76,10 +77,10 @@
 							<input type="date">
 				        </div>
 				        <div class="input-checkbox">
-					          <input type="checkbox" id="terminos">
+					          <input type="checkbox" id="terminos" required>
 					          <label>Acepto los Terminos y Condiciones</label>
 				        </div>
-		       			 <button type="button"><label>Enviar</label></button>
+		       			 <button type="submit"><label>Enviar</label></button>
 					</form>
 				</div>
 		</div>
@@ -96,8 +97,10 @@
 			<a href=""><p>Lugares de interés<i class="material-icons">keyboard_arrow_down</i></p></a>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		</div>
-		<a class="btnFixed" id="disconnect"><img src="./images/turn-on.svg"></a>
-		<a class="btnFixed" id="share"><img src="./images/share.svg"></a>
+
+		<div id="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29922.438145205393!2d-4.793705459496973!3d37.9722545646475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6cdc03dd5e4b27%3A0x4d22ae8e902daae8!2sParque+Periurbano+Los+Villares!5e0!3m2!1ses!2ses!4v1516119741544"  frameborder="0"  allowfullscreen></iframe>
+		</div>
 	</main>
 	<footer>
 			<div class="terminos">

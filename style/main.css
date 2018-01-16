@@ -3,9 +3,8 @@
 * <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 * <div>Icons made by <a href="https://www.flaticon.com/authors/chanut-is-industries" title="Chanut is Industries">Chanut is Industries</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 */
-
 body{
-	background-color: #EFEFEF;
+	background-color: #FFFFFF;
 	font-family: 'Roboto', sans-serif;;
 }
 
@@ -27,27 +26,6 @@ nav div{
 	display: flex;
 	align-items: center;
 }
-
-ul{
-	list-style: none;
-}
-
-.logo{
-	width: 1.5rem;
-	height: 1.5rem;
-	padding-left: 5px;
-}
-
-h1{
-	font-size: 1.2rem;
-}
-
-.menu {
-	padding: 17px;
-	width: 1.5rem;
-	height: 1.5rem;
-}
-
 nav > ul{
 	display: none;
 }
@@ -57,32 +35,63 @@ nav > ul > li{
 	margin: 0px 20px 0px;
 }
 
+ul{
+	list-style: none;
+}
+
 a{
 	text-decoration: none;
 	color: #FFFFFF;
 }
+i{vertical-align: middle;}
+
+h1{
+	font-size: 1.2rem;
+}
+
+.logo{
+	width: 1.5rem;
+	height: 1.5rem;
+	padding-left: 5px;
+}
+
+.menu {
+	padding: 17px;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
 
 /**/
 .home-search{
 	background-image: url("../images/arboles.jpg");
-	height: 200px;
+	height: 240px;
 	background-size: cover;
 	color: #FFFFFF;
 	text-align: center;
 	margin-top: 5px;
 }
+
+.home-search label{	color: #0D8130;	}
+
+.inputsHome input[type="date"]{
+	padding: 0px;
+	width: 110px;
+	margin: 15px 0 15px 0;
+	color: gray;
+}
+
 .inputsHome input[type="text"]{
 	border:none;
 	background: none;
 	padding: 10px 0 3px 0;
 	border-bottom: 1px solid gray;
+
+}input[type="text"]:focus{
+	border-bottom:2px solid #0D8130 ;
 }
 .inputsHome select{
 	background-color: transparent;
-	-moz-appearance: none;
- 	-webkit-appearance: none;
- 	appearance: none;
-	border: none;
 	overflow: hidden;
 	padding: 5px 0 3px 0;
 	color: gray;
@@ -91,6 +100,7 @@ a{
 	border-bottom: 1px solid #EFEFEF;
 }
 
+
 .home-search > h3{
 	display: inline-block;
 }
@@ -98,14 +108,16 @@ a{
 .inputsHome{
 	background: rgba(255,255,255,0.8);
 	margin: 0 auto;
-	width: 85%;
+	width: 90%;
 	font-size: 80%;
-	padding: 10px;
+	padding: 10px;	
 	text-align: left;
 	display: grid;
-	grid-template-areas: "a a" "b c";
-	grid-template-columns: 30% 70%;
+	grid-template-areas: "a b" 
+						"c c";
+	grid-template-columns: 80% 20%;
 	grid-row-gap: 5px;
+	grid-column-gap: 5px;
 }
 
 .location-input{
@@ -116,24 +128,42 @@ a{
 	grid-area: b;
 }
 
-.type-input{
-	grid-area: c;
+.fechas{
+	grid-area:c;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.fechas label:first-child, .fechas label:last-child{
+	margin-left:5px;
+}
+
+.fechas input{
+	width: 60%;
 }
 
 .location-input input{
-	width: 145px;
+	width: 80%;
 }
 
 .people-input input{
-	width: 45px;
+	width: 25px;
 }
 
-.type-input select{
-	width: 155px;
+.type-input{
+	width: 200px;
+	margin-top: 10px;
+	background-color:#FFFFFF;
+	border:none;
+	border-bottom: 1px solid #0D8130;
+}
+.type-input:hover{
+	background-color:#f8f8f8;
 }
 
-.type-input .material-icons{
-	padding-top: 2px;
+aside i, #filter i{
+	color: #0D8130;
+	vertical-align: top;
+	margin-top: 10px;
 }
 
 button span{
@@ -150,7 +180,6 @@ button, .orderBy select{
 	margin-top: 10px;
   	background-color: #0D8130;
   	color: #EFEFEF;
-  	
 }
 
 .home-search button span {
@@ -179,11 +208,11 @@ aside{
 	font-size: 0.9rem;
 }
 
-aside strong{
+aside strong, #filter strong{
 	color:#0D8130;
 }
 
-aside ul li{
+aside ul li, #filter ul li{
 	margin-bottom: 20px;
 }
 
@@ -191,15 +220,11 @@ aside select{
 	width: 40%;
 }
 
-aside .fechas{
-	line-height: 50px;
-}
-
 aside input{
 	color: gray;
 }
 
-aside .buttonsFilter{
+aside .buttonsFilter, #filter .buttonsFilter{
 	display: flex;
 	justify-content: space-around;
 }
@@ -212,27 +237,26 @@ aside .buttonsFilter{
 
 }
 
-.orderBy button, .orderBy select, aside button{
+.orderBy button, .orderBy select, aside button, #filter button{
 	background-color: #EEEEEE;
 	color: #0D8130;
 }
 
-.orderBy button, aside button{
+.orderBy button, aside button, #filter button{
 	padding: 5px 20px;
 }
 
-.orderBy button:hover, .orderBy select:hover, aside button:hover{
+.orderBy button:hover, .orderBy select:hover, aside button:hover, #filter button:hover{
 	background-color: #FAFAFA;
 }
 
-.orderBy select{
+ select{
 	appearance: none;
 	-moz-appearance: none;
  	-webkit-appearance: none;
 }
 
 /**/
-
 .houses{
 	display:grid;
 }
@@ -247,6 +271,22 @@ main > section > .houses > a > article{
 	grid-template-columns: 1.5fr 2fr;
 	border: 1px solid #0D8130;
 	box-shadow: 0 3px 6px rgba(3, 38, 14,0.16), 0 3px 6px rgba(5,51,19,0.23);
+}
+
+article li{
+	margin-bottom: 10px;
+}
+#stars{
+	margin-left: 10px;
+	width: 70px;
+	vertical-align: middle;
+}
+article > div > div{
+	display: flex;
+}
+
+.btnDisconnect{
+	margin: 20px 20px 0px 0px;
 }
 
 main > section > .houses > a > article:hover{
@@ -302,19 +342,35 @@ footer{
 
 /* --------------------------- LODGING --------------------------- */
 
+#map{
+	margin: 0 auto;
+	width:70%;
+}
+
+iframe{
+	width: 100%;
+	height: auto;
+	border: 0;
+	margin: 10px;
+}
+
 .name-lodging{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
-	background-color: #E2E2E2;
+	background-color:#EDEDED;
 }
 
-.name-lodging a, .buttons-lodging a{
+.buttons-lodging a{
+	color: #0D8130;
+}
+
+.name-lodging a{
 	color: gray;
 }
 
-.name-lodging h3, h4{
+.name-lodging h3, .name-lodging h4{
 	text-align: center;
 	color: #0D8130;
 }
@@ -327,14 +383,13 @@ footer{
 	padding: 10px;
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid #0D8130;
+	border: 1px solid gray;
 	border-radius: 20px;
-	background-color: #E2E2E2;
+	background-color: #EDEDED;
 }
 
 .form-lodging{
 	display: none;
-	padding-top: 40px;
 }
 
 .lodging img{
@@ -343,6 +398,13 @@ footer{
 
 .img-lodging{
 	padding: 15px;
+}
+.img-lodging ul{
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.7rem;
+	padding-left: 0px;
+	color: gray;
 }
 
 .form-lodging button{	
@@ -354,22 +416,17 @@ footer{
 	margin: 8px 10px 8px;
 }
 
+
+.form-lodging li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
 .form-lodging li > button > img{
 	width: 20px;
 	height: 20px;
 	margin: 5px 35px 5px;
-}
-
-.form-lodging li{
-	margin-bottom: 20px;
-}
-
-.img-lodging ul{
-	display: flex;
-	justify-content: space-between;
-	font-size: 0.7rem;
-	padding-left: 0px;
-	color: gray;
 }
 
 .img-lodging .material-icons{
@@ -401,11 +458,6 @@ footer{
 	justify-content: space-between;
 }
 
-.btnFixed{
-	position: fixed;	
-	bottom: 0px;
-}
-
 #disconnect{
 	right: 25px;
 }
@@ -419,8 +471,13 @@ footer{
 	height: 50px;
 }
 
-ul li:first-child{
-	*display: none;
+.form-lodging{
+	display: block;
+	text-align: left;
+}
+
+.form-lodging ul button{
+	display:inline-block;
 }
 
 .form-lodging > button{
@@ -435,21 +492,13 @@ ul li:first-child{
 	margin: 20px 0px 0px 20px;
 }
 
-#tw {
-	background-color: #00BCD4;
-}
+#tw {	background-color: #00BCD4;}
 
-#fb{
-	background-color: #4758B5;
-}
+#fb{	background-color: #4758B5;}
 
-#inst{
-	background-color: #E92568;
-}
+#inst{	background-color: #E92568;}
 
-#g{
-	background-color: #F44336;
-}
+#g{	background-color: #F44336;}
 
 .form-lodging > button > img{
 	width: 20px;
@@ -460,8 +509,7 @@ ul li:first-child{
 .form-lodging .form{
 	display: none;
 }
-
-.form{
+.form, #filter{
 	width: 90%;
 	max-width: 250px;
 	padding: 0px 20px 10px;
@@ -472,6 +520,8 @@ ul li:first-child{
 	font-size: 0.9rem;
 	
 }
+#filter{	margin-bottom: 20px;}
+
 
 .form h4{
 	background-color: #0D8130;
@@ -496,11 +546,9 @@ ul li:first-child{
 	margin-bottom: 10px;
 }
 
-.form input[type="date"]{
-	color: gray;
-}
+.form input[type="date"]{color: gray;}
 
-input[type="text"], input[type="email"], input[type="date"]{
+.form input[type="text"], input[type="email"], input[type="date"]{
 	font-size: 16px;
 	width: 90%;
 	outline: none;
@@ -523,6 +571,15 @@ input[type="text"], input[type="email"], input[type="date"]{
 .form button:hover{
 	background-color: #074D1C;
 }
+#form{
+	margin-bottom:20px;
+}
+
+input:focus{
+	border-bottom: 2px solid #074D1C;
+}
+
+/* -------------- MEDIA --------------------*/
 
 		
 @media (min-width: 480px){
@@ -534,7 +591,6 @@ input[type="text"], input[type="email"], input[type="date"]{
 	.menu{
 		display: none;
 	}
-
 
 	nav > ul{
 		display: inline-block;
@@ -552,6 +608,14 @@ input[type="text"], input[type="email"], input[type="date"]{
 		display:none;
 	} 
 
+	.inputsHome{
+		width: 300px;
+	}
+
+	.btnDisconnect{
+		display: block;
+	}
+
 }
 
 @media (min-width: 520px){
@@ -565,9 +629,6 @@ input[type="text"], input[type="email"], input[type="date"]{
 		width: 70%;
 	}
 
-	.btnFixed{
-		display: none;
-	}
 }
 
 @media (min-width: 600px){
@@ -580,23 +641,24 @@ input[type="text"], input[type="email"], input[type="date"]{
 	.home-search h3{
 		font-size: 40px;
 	}
-
-	.inputsHome{
-		grid-template-areas: "a b c";
-		grid-template-columns: 1fr 1fr 1fr;
+	.form-lodging{
+		padding-top: 40px;
 	}
-
-	.btnDisconnect{
-		display: inline;
-	}	
+	.form-lodging ul li{
+	display:block;
+	}
+	.form-lodging li {
+    margin-bottom: 20px;
+}
+	
 
 }
 
 @media (min-width: 1024px){
-	.houses{
-		grid-template-columns: 1fr 1fr 1fr;
-	}	
-
+	
+	.btnFiltrar{
+		display:none;
+	}
 	aside{
 		width: 20%;
 		display: inline-block;
@@ -620,7 +682,11 @@ input[type="text"], input[type="email"], input[type="date"]{
 		display: block;
 	}
 
+	.inputsHome{
+		width: 70%;
+		grid-template-areas: "a b c";
+		grid-template-columns: 25% 10% 40%;
+		justify-content: center;
+	}
+
 }
-
-
-

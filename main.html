@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Desconecta - Nieves Borrero</title>
 	<link rel="stylesheet" href="./style/normalize.css">
 	<link rel="stylesheet" href="./style/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
@@ -13,11 +14,11 @@
 		<nav>
 			<div>
 				<img class="logo" src="./images/logo.svg">
-				<h1>Desconecta</h1>
+				<h1><a href="./main.html">Desconecta</a></h1>
 			</div>
 			<img class="menu" src="./images/menu-button.svg">
 			<ul>
-				<li><a href="">Mapa</a></li>
+				<li><a href="#">Mapa</a></li>
 				<li><a href="">Login</a></li>
 			</ul>
 		</nav>
@@ -25,32 +26,40 @@
 			<section class="home-search">
 				<h3>¿Dónde quieres desconectar?</h3>
 				<form action="" method="" accept-charset="utf-8">
-					<div class="inputsHome">						
-						<label class=location-input>
-							<i class="material-icons">location_on</i>
-							<input type="text" placeholder="Provincia, localidad..."></label>						
-						<label class="people-input">
-							<i class="material-icons">people</i>
-							<input type="text" placeholder="Plazas">
-						</label>	
-						<label class="type-input"><i class="material-icons">home</i>
-							<select name="type">
-								<option value="">Todos los alojamientos</option>
-								<option value="">Alquiler completo</option>
-								<option value="">Alquiler por habitaciones</option>
-							</select>
-						</label>						
+					<div class="inputsHome">
+						
+							<div class=location-input>						
+								<label>
+									<i class="material-icons">location_on</i>
+									<input type="text" placeholder="Provincia, localidad..."></label>						
+							</div>
+							<div class="people-input">
+								<label>
+									<i class="material-icons">people</i>
+									<input type="text">
+								</label>	
+							</div>
+						
+							<div class="fechas">
+							<label>In<input type="date"></label>
+							<label>Out<input type="date"></label>
+							</div>
+										
 					</div>
+						
+						
 					<button type=""><span>Buscar</span></button>
 				</form>
 			</section>
 			<aside>
 				<form action="" method="" accept-charset="utf-8">
-					    <div class="fechas">
-							<strong>Fechas</strong>
-							<p><label>Entrada &nbsp</label><input type="date"></p>
-							<p><label>Salida  &nbsp &nbsp</label><input type="date"></p>
-						</div>						
+							<label><i class="material-icons">home</i>
+								<select class="type-input" name="type">
+									<option value="">Todos los alojamientos &#9660</option>
+									<option value="">Alquiler completo</option>
+									<option value="">Alquiler por habitaciones</option>
+								</select>
+							</label>
 							<p><strong>Precio por persona y noche</strong></p>
 							<select name="price">
 								<option selected="selected" value="">Min</option>
@@ -102,10 +111,10 @@
 							<option value="">Mejor valorados</option>
 							<option selected="selected" disabled="true">Ordenar por</option>
 					</select>
-					<button class="btnFiltrar"><span>Filtrar</span></button>
+					<a href="./filter.html"><button class="btnFiltrar"><span>Filtrar</span></button></a>
 				</div>
 				<div class="houses">
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -114,7 +123,8 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
+
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -123,7 +133,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -132,7 +142,8 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
+
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -141,7 +152,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -150,7 +161,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -159,7 +170,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -168,7 +179,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -177,7 +188,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -186,7 +197,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -195,7 +206,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -204,7 +215,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -213,7 +224,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -222,7 +233,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -231,7 +242,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -240,7 +251,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -249,7 +260,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -258,7 +269,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -267,7 +278,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -276,7 +287,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -285,7 +296,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -294,7 +305,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
@@ -303,7 +314,7 @@
 							</div>						
 							</article>
 					</a>
-					<a href="">
+					<a href="./lodging.html">
 						<article>
 						   	<img class="casarural" src="./images/rural.jpg">
 						    <div>
@@ -312,7 +323,7 @@
 									<li><h4 class="place">Localización concreta</h4></li>
 									<li>
 										<i class="material-icons">people</i><strong>2-10</strong>  
-										<i class="material-icons">star</i><strong>5</strong>
+										<img src="./images/stars.png" id="stars">
 										<img src="./images/turn-on.svg" class="btnDisconnect">	
 									</li>
 									<li><strong class=price>20 € </strong>pers/noche aprox.</li>
